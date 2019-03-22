@@ -1,6 +1,6 @@
 
 # SCLM Migration Sample
-This sample provides scripts to migrate source members from IBM Software Configuration and Library Manager (SCLM) to a local Git repository. Additionally an update is planned for January 2019 to also include scripts to generate Groovy/DBB build script stubs (may require configuration) from SCLM build definitions.
+This sample provides scripts to migrate source members from IBM Software Configuration and Library Manager (SCLM) to a local Git repository. Additional scripts are included to generate Groovy/DBB build script stubs from SCLM language definitions.  These scripts are intended as a starting point for DBB build scripts.
 
 ## Overview
 * The sample is a combination of Unix shell scripts, Apache Groovy scripts and REXX scripts
@@ -11,12 +11,16 @@ This sample provides scripts to migrate source members from IBM Software Configu
 Please review the [SCLM Assumptions documentation](https://github.com/IBM/dbb/blob/master/Migration/sclm/sclmAssumptions.md)  before running the migration process.
 
 ## Prerequisites
+The following software should be installed and configured on z/OS.
 * DBB Toolkit
     * DBB_HOME environment variable must be set
 * Rocket’s Git and supporting open source tools
 * IBM Java v8 64bit
     * JAVA_HOME environment variable must be set
 * ISPF Legacy Gateway
+
+## Installation
+Describe how to install the tools by cloning, etc.
 
 ## Folder Content
 * bin - Contains the shell scripts that drive the migration process
@@ -32,7 +36,7 @@ Please review the [SCLM Assumptions documentation](https://github.com/IBM/dbb/bl
 The migration process is comprised of three phases each of which contain multiple steps.  
 * SCLM Extraction
 * Source Code Migration
-* Build Script Generation (Coming Soon)
+* Build Script Generation
 
 Step by step instructions are located in the [Migration Process](https://github.com/IBM/dbb/blob/master/Migration/sclm/migrationSteps.md) documentation.
 
